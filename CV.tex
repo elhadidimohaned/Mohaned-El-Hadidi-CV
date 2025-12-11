@@ -1,1 +1,137 @@
-init
+\documentclass[11pt,a4paper]{article}
+
+% --- Packages ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+\usepackage{enumitem}     % For list customization
+\usepackage{hyperref}     % For links
+\usepackage{titlesec}     % For formatting headings
+
+% --- Formatting ---
+\pagestyle{empty}                    % No page numbers
+\raggedright                         % Left-align text (easier for ATS)
+\setlength{\parindent}{0pt}          % No indentation
+\setlength{\parskip}{0.5em}          % Spacing between paragraphs
+
+% Custom Header Format
+\titleformat{\section}{\large\bfseries\uppercase}{}{0em}{}[\titlerule]
+
+% Custom Item List
+\setlist[itemize]{left=0pt, label=--, noitemsep, topsep=0pt}
+
+% --- Document Content ---
+\begin{document}
+
+% --- Header ---
+\begin{center}
+    {\huge \textbf{Mohaned El-Hadidi}} \\ \vspace{0.2cm}
+    Software Engineer | .NET \& Microservices \\ \vspace{0.2cm}
+    Cairo, Egypt \ | \ +20 103 332 5945 \ | \ mohanedeh@gmail.com \\
+    LinkedIn: linkedin.com/in/mohaned-elhadidi \ | \ GitHub: github.com/elhadidimohaned
+\end{center}
+
+\vspace{0.5cm}
+
+% --- Professional Summary ---
+\section{Professional Summary}
+Results-driven Software Engineer with 3.5+ years of experience specializing in \textbf{.NET 8}, \textbf{Microservices}, and \textbf{Event-Driven Architecture}. Expert in building scalable backend systems using \textbf{ABP.io} and \textbf{Apache Kafka}. Proven track record of optimizing high-traffic databases and integrating complex enterprise systems (SAP/HANA). Experienced in mentoring junior developers and delivering critical features for government-sector clients (GCA) in Agile environments.
+
+% --- Professional Experience ---
+\section{Professional Experience}
+
+\textbf{Software Engineer} \hfill Aug 2022 -- Present \\
+\textit{Ejada Systems | Cairo, Egypt}
+
+\textbf{Project: Shamel 2.0 (Client: GCA)}
+\begin{itemize}
+    \item Architected and developed scalable microservices using \textbf{.NET 8} and \textbf{ABP.io Framework (Community)}, adhering strictly to \textbf{DDD} principles.
+    \item Engineered a robust Event-Driven communication layer using \textbf{Apache Kafka}; optimized producer/consumer configurations to reduce event processing latency by \textbf{\textasciitilde35\%}.
+    \item Implemented the \textbf{Outbox Pattern} to guarantee data consistency across distributed services, ensuring 99.9\% message reliability during system failures.
+    \item Optimized complex SQL Server database operations, increasing data ingestion throughput by \textbf{300\%} via strategic bulk operations and query tuning.
+    \item Led technical delivery for 3 Juniors and 2 Peer developers; conducted code reviews and guided the team in implementing clean architecture patterns.
+    \item Collaborated on \textbf{Blazor} frontend components to ensure seamless integration with backend APIs.
+\end{itemize}
+
+\vspace{0.3cm}
+
+\textbf{Project: SaaS HR Platform}
+\begin{itemize}
+    \item Designed and developed a full-stack SaaS HR solution using \textbf{.NET 8}, \textbf{ABP.io}, and \textbf{Angular}; architected the multi-tenant database schema and implemented responsive \textbf{UI} modules.
+    \item Utilized \textbf{Docker} and \textbf{OpenShift} to execute containerized application deployments, ensuring consistent environments across development and production.
+\end{itemize}
+
+\vspace{0.3cm}
+
+\textbf{Project: Invoice Management Integration}
+\begin{itemize}
+    \item Developed a mission-critical Invoice Management API integrated with \textbf{SAP} and \textbf{HANA} databases, automating financial data synchronization for enterprise clients.
+    \item Integrated \textbf{Unifonic} and SMTP services to automate real-time invoice delivery via \textbf{WhatsApp} and Email immediately upon generation.
+    \item Designed secure RESTful endpoints that handled high-volume invoice processing with sub-second response times.
+\end{itemize}
+
+\vspace{0.3cm}
+
+\textbf{Project: HR Legacy Modernization}
+\begin{itemize}
+    \item Maintained and enhanced a legacy HR system using \textbf{.NET Framework} and \textbf{Knockout.js}.
+    \item Selected to travel to \textbf{KSA} to conduct on-site user training and acceptance testing, ensuring successful system adoption by client stakeholders.
+    \item Refactored SQL stored procedures and backend logic, reducing report generation time by \textbf{40\%}.
+\end{itemize}
+
+\vspace{0.5cm}
+
+\textbf{Software Engineering Intern} \hfill Aug 2021 -- Sep 2021 \& Aug 2020 -- Sep 2020 \\
+\textit{GASCO (Egyptian Natural Gas Company)}
+\begin{itemize}
+    \item Gained extensive hands-on experience in \textbf{.NET Core} and modern web development standards during two separate intensive internship rounds.
+    \item Collaborated with senior engineers to analyze legacy system requirements and proposed database schema optimizations.
+\end{itemize}
+
+% --- Technical Skills ---
+\section{Technical Skills}
+\begin{itemize}
+    \item \textbf{Core Frameworks:} .NET 8, .NET Core, ASP.NET Web API, C\#, ABP.io Framework
+    \item \textbf{Architecture:} Microservices, Domain-Driven Design (DDD), CQRS, Event-Driven, Clean Architecture
+    \item \textbf{Data \& Messaging:} SQL Server, PostgreSQL, Redis, Apache Kafka, Entity Framework Core
+    \item \textbf{DevOps \& Tools:} Docker, OpenShift, Azure DevOps, Git, Postman
+    \item \textbf{Languages:} C++, Python, TypeScript
+\end{itemize}
+
+% --- Certifications ---
+\section{Certifications}
+\begin{itemize}
+    \item \textbf{.NET 8 Microservices: DDD, CQRS, Vertical/Clean Architecture} | Udemy (28.5 Hours)
+    \item \textbf{ASP.NET Core - True Ultimate Guide} | Udemy (86 Hours)
+\end{itemize}
+
+% --- Education ---
+\section{Education}
+\textbf{B.Sc. in Computer \& Systems Engineering} \hfill Sep 2017 -- Jul 2022 \\
+\textit{Ain Shams University, Faculty of Engineering}
+\begin{itemize}
+    \item \textbf{Grade:} Very Good with Honors.
+    \item \textbf{Graduation Project:} AI Applications in Analog IC Design (Utilized Graph Neural Networks).
+\end{itemize}
+
+% --- Projects ---
+\section{Projects}
+\textbf{Distributed Online Marketplace System}
+\begin{itemize}
+    \item Developed a distributed RESTful API using ASP.NET Core and SQL Server.
+    \item Implemented database sharding (horizontal fragmentation) which improved query distribution efficiency by \textbf{50\%} under load.
+\end{itemize}
+
+\vspace{0.2cm}
+
+\textbf{Dog Breed Classifier (AI/ML)}
+\begin{itemize}
+    \item Built a Convolutional Neural Network (CNN) using PyTorch/OpenCV achieving 85\% classification accuracy.
+    \item Utilized Transfer Learning with ResNet152 to optimize training time and model precision.
+\end{itemize}
+
+% --- Languages ---
+\section{Languages}
+\textbf{Arabic:} Native \ \textbf{English:} Excellent
+
+\end{document}
