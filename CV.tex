@@ -5,7 +5,8 @@
 \usepackage[T1]{fontenc}
 \usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
 \usepackage{enumitem}     % For list customization
-\usepackage{hyperref}     % For links
+% FIX 1: Added [hidelinks] to remove ugly boxes around links while keeping them clickable
+\usepackage[hidelinks]{hyperref}     
 \usepackage{titlesec}     % For formatting headings
 
 % --- Formatting ---
@@ -26,10 +27,10 @@
 % --- Header ---
 \begin{center}
     {\huge \textbf{Mohaned El-Hadidi}} \\ \vspace{0.2cm}
-    % CHANGE 1: Updated Title to target Senior/Backend roles explicitly
     Senior Backend Engineer | .NET 8, Kafka \& Microservices \\ \vspace{0.2cm}
-    Cairo, Egypt \ | \ +20 103 332 5945 \ | \ mohanedeh@gmail.com \\
-    LinkedIn: linkedin.com/in/mohaned-elhadidi \ | \ GitHub: github.com/elhadidimohaned
+    Cairo, Egypt \ | \ +20 103 332 5945 \ | \ +20 155 003 3378 \ | \ \href{mailto:mohanedeh@gmail.com}{mohanedeh@gmail.com} \\
+    % FIX 2: Used \href to make these clickable
+    LinkedIn: \href{https://www.linkedin.com/in/mohaned-elhadidi}{linkedin.com/in/mohaned-elhadidi} \ | \ GitHub: \href{https://github.com/elhadidimohaned}{github.com/elhadidimohaned}
 \end{center}
 
 \vspace{0.5cm}
@@ -37,7 +38,6 @@
 % --- Professional Summary ---
 \section{Professional Summary}
 Results-driven Software Engineer with 3.5+ years of experience specializing in \textbf{.NET 8}, \textbf{Microservices}, and \textbf{Event-Driven Architecture}. Expert in building scalable backend systems using \textbf{ABP.io} and \textbf{Apache Kafka}. Proven track record of optimizing high-traffic databases and integrating complex enterprise systems (SAP/HANA). Experienced in mentoring junior developers and delivering critical features for government-sector clients in Agile environments.
-% CHANGE 2: Added relocation statement
 \\ \textbf{Availability:} Open to relocation to UAE, KSA, UK, and Germany.
 
 % --- Professional Experience ---
@@ -46,7 +46,6 @@ Results-driven Software Engineer with 3.5+ years of experience specializing in \
 \textbf{Software Engineer} \hfill Aug 2022 -- Present \\
 \textit{Ejada Systems | Cairo, Egypt}
 
-% CHANGE 3: Expanded Client Name for international context
 \textbf{Project: Shamel 2.0 (Client: General Court of Audit - KSA Gov)}
 \begin{itemize}
     \item Architected and developed scalable microservices using \textbf{.NET 8} and \textbf{ABP.io Framework (Community)}, adhering strictly to \textbf{DDD} principles.
